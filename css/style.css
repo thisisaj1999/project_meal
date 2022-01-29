@@ -312,6 +312,11 @@ a {
 /* Hero */
 
 .hero {
+  background: url("../images/meal1background@3x.jpg") no-repeat center center;
+  background-color: rgba(25, 24, 24, 1);
+  background-blend-mode: overlay;
+  background-size: cover;
+  padding: 5rem 0;
   gap: 1rem;
 }
 
@@ -331,11 +336,13 @@ a {
   font-weight: 800;
   font-size: 56px;
   line-height: 7.5rem;
+  color: var(--color-primary);
 }
 
 .hero_content > p {
   margin: 1rem;
   font-weight: 700;
+  color: var(--color-secondary);
 }
 
 .hero_content > a {
@@ -347,6 +354,7 @@ a {
   .hero {
     align-items: center;
     gap: 0;
+    padding: 6rem 0;
   }
 
   .hero_content {
@@ -366,6 +374,10 @@ a {
 }
 
 @media screen and (min-width: 1140px) {
+  .hero {
+    padding: 10rem 0;
+  }
+
   .hero_content {
     padding-left: 4rem;
   }

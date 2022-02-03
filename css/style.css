@@ -86,7 +86,7 @@ a {
 /* navBar */
 
 .navBar {
-  background-color: #000;
+  /* background-color: #000; */
   padding: 1rem 0;
   line-height: 2;
 }
@@ -96,6 +96,10 @@ a {
   margin: 0;
   display: flex;
   flex-direction: column;
+}
+
+.pos > a:hover {
+  color: var(--color-primary);
 }
 
 .navBar_img {
@@ -140,12 +144,17 @@ a {
 }
 
 /* Media Object */
+
+.menu {
+  padding: 3.5rem;
+  gap: 2rem;
+}
+
 .mediaHeading,
 .mediaPrice {
   color: var(--color-primary);
   font-weight: 700;
   margin: 1.5rem;
-  margin-left: 0;
 }
 
 .media_object {
@@ -156,6 +165,7 @@ a {
 .media_content {
   text-align: center;
   margin: 0 1rem;
+  color: var(--color-secondary);
 }
 
 .mediaImg > img {
@@ -163,9 +173,23 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .menu {
+    gap: 2rem;
+    padding: 2rem 4rem;
+  }
+
+  .mediaHeading,
+  .mediaPrice {
+    margin: 0.5rem 1rem 0.5rem 0;
+  }
+
   .media_content {
     text-align: start;
     margin-left: 0.2rem;
+  }
+
+  .media_content > p {
+    margin: 1rem 0;
   }
   .media_object {
     justify-items: start;
@@ -178,7 +202,7 @@ a {
 .aboutUs {
   justify-items: center;
   text-align: center;
-  margin-top: 2rem;
+  padding: 6rem;
 }
 
 .aboutUs_img > img {
@@ -188,34 +212,52 @@ a {
 
 .aboutUs_content {
   margin: 0 0.8rem;
+  font-size: 4vw;
 }
 
 .aboutUsHeading {
   margin-bottom: 0;
+  font-size: 6vw;
 }
+
 .aboutUs_content > p {
   margin-top: 0.5rem;
 }
 
 @media screen and (min-width: 768px) {
   .aboutUs {
-    gap: 1.4rem;
+    gap: 1.6rem;
     text-align: start;
+    align-items: center;
+    padding: 7rem;
   }
 
   .aboutUs_content {
     align-self: center;
+    margin: 0;
+    font-size: 2.5vw;
+  }
+
+  .aboutUsHeading {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .aboutUs {
+    padding: 10rem;
   }
 }
 
 /* Gallery */
 .gallery {
   text-align: center;
-  margin: 1rem;
+  padding: 2.5rem;
 }
 
 .gallery_heading {
-  margin-bottom: 1.5rem;
+  margin: 0 0 2rem 0;
+  color: var(--color-secondary);
 }
 
 .gallery_img > img {
@@ -228,12 +270,21 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .gallery {
+    padding: 6rem;
+  }
+
   .gallery_img {
     display: flex;
     justify-content: center;
   }
+
+  .gallery_heading {
+    margin-bottom: 3rem;
+  }
+
   .galleryAlbum {
-    gap: 1rem;
+    row-gap: 4.5rem;
   }
   .gallery_img > img {
     width: 80%;
@@ -312,10 +363,10 @@ a {
 /* Hero */
 
 .hero {
-  background: url("../images/meal1background@3x.jpg") no-repeat center center;
+  /* background: url("../images/meal1background@3x.jpg") no-repeat center center;
   background-color: rgba(25, 24, 24, 1);
   background-blend-mode: overlay;
-  background-size: cover;
+  background-size: cover; */
   padding: 5rem 0;
   gap: 1rem;
 }
@@ -580,4 +631,124 @@ a {
   .img_mid {
     top: 38.1%;
   }
+}
+
+/* Footer */
+
+.footer_img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer_img > img {
+  width: 70%;
+  margin: 3rem 1rem;
+}
+
+.footer_menu_opt {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem;
+}
+
+.footer_menu_opt > li {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.footer_menu_opt > li > a:hover {
+  color: var(--color-primary);
+}
+
+.social_logo {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  padding: 2rem;
+  margin-bottom: 0;
+}
+
+.social_logo > li {
+  display: flex;
+  flex-direction: column;
+}
+
+.social_logo > li > img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .footer_menu_opt {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .footer_img > img {
+    width: 38%;
+  }
+}
+
+/* Block */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* heroBlock */
+
+.block--hero {
+  background: url("../images/meal1background@3x.jpg") no-repeat center center;
+  background-color: rgba(25, 24, 24, 1);
+  background-blend-mode: overlay;
+  background-size: cover;
+  padding-bottom: 10rem;
+}
+
+/* aboutUsBlock */
+
+.block--aboutUs {
+  background-color: #1d1d23;
+  color: var(--color-secondary);
+}
+
+/* curveBlock */
+
+.block--curve {
+  background-color: #1d1d23;
+  padding: 2.8rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .block--curve {
+    padding: 5rem 0;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .block--curve {
+    padding: 7rem 0;
+  }
+}
+
+/* galleryBlock */
+
+.block--gallery {
+  background-color: #1d1d23;
+}
+
+/* mediaBlock */
+
+.block--media {
+  background-color: #1d1d23;
+}
+
+/* footerBlock */
+
+.block--footer {
+  background-color: #35353b;
+  padding: 4rem 0;
 }

@@ -359,7 +359,7 @@ a {
 /* Testimonial */
 
 .testimonial_back {
-  background: url("../images/meal\ 12@1x.jpg") no-repeat center center;
+  background: url("../images/meal12@1x.jpg") no-repeat center center;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -412,7 +412,7 @@ a {
 
 @media screen and (min-width: 1140px) {
   .testimonial_back {
-    background: url("../images/meal\ 12.jpg") no-repeat center center;
+    background: url("../images/meal12.jpg") no-repeat center center;
     background-size: cover;
   }
 
@@ -795,7 +795,7 @@ a {
 
 @media screen and (min-width: 1140px) {
   .block--curve {
-    padding: 10rem 0; /*temp*/
+    padding: 10rem 0;
   }
 }
 
@@ -803,7 +803,7 @@ a {
 
 @media screen and (min-width: 1140px) {
   .block--gallery {
-    padding: 3rem 0; /*temp*/
+    padding: 3rem 0;
   }
 }
 
